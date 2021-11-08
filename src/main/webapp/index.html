@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student Management</title>
+</head>
+<style>
+    *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    nav{
+        width: 100%;
+        display: flex;
+        background: rgb(252, 164, 2);
+        height: 80px;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+    }
+
+    .btn:hover{
+        background: rgb(25, 187, 4);
+    }
+    .view-student{
+        margin-left: 40px;
+        padding: 8px 18px;
+        background: rgb(26, 207, 2);
+        text-decoration: none;
+        color: #fff;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: 0.3s;
+        border: none;
+    }
+    form{
+        display: block;
+        width: 100%;
+    }
+    table{
+        width: 50%;
+        padding: 30px;
+        margin: auto;
+        margin-top: 60px;
+        border-radius: 20px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    .input-area{
+        width: 90%;
+        border: none;
+        padding: 12px 16px;
+        border-radius: 8px;
+        margin: 10px 0px;
+        background: rgb(243, 243, 243);
+    }
+    .submit-btn{
+        margin: auto;
+        padding: 8px 18px;
+        background: rgb(26, 207, 2);
+        text-decoration: none;
+        color: #fff;
+        border-radius: 8px;
+        font-weight: 500;
+        transition: 0.3s;
+        border: none;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    
+</style>
+<body>
+    <div class="wrapper">
+        <nav>
+            <h1>Student Registration</h1>
+            <a href="viewstudent" class="view-student">View Student</a>
+        </nav>
+	<form action="student" method="post">
+	
+		<table>
+		
+		<tr>
+			<td class="heading"> Student ID</td>
+			<td> <input class="input-area" type="text" name="stdid"></td>
+		</tr>
+		
+		<tr>
+			<td class="heading">Student Name</td>
+			<td> <input class="input-area" type="text" name="sname"></td>
+		</tr>
+		
+		<tr>
+			<td class="heading">Student Mail</td>
+			<td> <input class="input-area" type="email" name="smail"></td>
+		</tr>
+		
+		<tr>
+			<td class="heading">Student Phone No</td>
+			<td> <input class="input-area" type="number" name="sphno"></td>
+		</tr>
+		
+		<tr>
+			<td class="heading">Batch Time No</td>
+			<td> <input class="input-area" type="text" name="stime"></td>
+		</tr>
+		
+		<tr>
+			<td> 
+				<input type="submit" class="submit-btn" value="Submit">
+			</td>
+		</tr>	
+		</table>
+	</form>
+	
+</div>
+	
+</body>
+</html>
